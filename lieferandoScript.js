@@ -1,5 +1,5 @@
 {
-    "food": [
+    let food = [
         {
             "name": "Pizza Margherita",
             "ingredients": "Tomatensauce, Mozzarella, Basilikum",
@@ -63,6 +63,6 @@
     ]
 }
 
-function renderFood {
+function Food {
     let 
 }
