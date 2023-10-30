@@ -16,9 +16,14 @@ header {
   align-items: center;
   padding: 0 24px;
   height: 70px;
-  background-color: #E30913;
+  background-color: #ff6600;
   color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 h1 {
@@ -45,11 +50,15 @@ h1 {
   transition: all 0.3s;
 }
 
+.container {
+  margin-top: 75px;
+}
+
 #mainImg {
   width: 100%;
   object-fit: cover;
   height: 400px;
-  border-bottom: 5px solid #E30913;
+  border-bottom: 5px solid #ff6600;
 }
 
 .info-section {
@@ -72,7 +81,7 @@ h1 {
 }
 
 .foodCategorie {
-  background-color: #E30913;
+  background-color: #ff6600;
   color: white;
   padding: 5px 20px;
   border-radius: 20px;
@@ -81,7 +90,7 @@ h1 {
 }
 
 .foodCategorie:hover {
-  background-color: #C20710;
+  background-color: #cc5500;
 }
 
 .foods div {
@@ -101,10 +110,32 @@ h1 {
   box-sizing: border-box;
 }
 
+.basket {
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .basketTopic, h2 {
   font-size: 1.2em;
-  color: #E30913;
+  color: #ff6600;
   font-weight: 900;
+}
+
+.basket > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.basket > div:last-child {
+  margin-bottom: 0;
+}
+
+.basket button {
+  background-color: #cc5500;
 }
 
 .basketText {
@@ -115,7 +146,7 @@ h1 {
 
 button {
   padding: 10px 20px;
-  background-color: #E30913;
+  background-color: #ff6600;
   color: white;
   border: none;
   border-radius: 20px;
@@ -125,12 +156,12 @@ button {
 }
 
 button:disabled {
-  background-color: #C20710;
+  background-color: #cc5500;
   cursor: not-allowed;
 }
 
 button:hover:not(:disabled) {
-  background-color: #C20710;
+  background-color: #cc5500;
 }
 
 @media (max-width: 768px) {
@@ -153,4 +184,3 @@ button:hover:not(:disabled) {
   height: 50px;
   object-fit: cover;
 }
-

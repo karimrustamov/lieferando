@@ -10,18 +10,22 @@
     <script src="./lieferandoScript.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body onload="render()">
     <header>
-        <img class="logo" src="./lieferandoImg/lieferandoLogo.jpg" alt="FlavorRunner Logo">
-        <h1>FlavorRunner</h1>
-        <button class="burger-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </button>
+        <div class="container">
+            <img class="logo" src="./lieferandoImg/lieferandoLogo.jpg" alt="FlavorRunner Logo">
+            <h1>FlavorRunner</h1>
+            <button class="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </div>
     </header>
     <main>
         <section>
@@ -55,7 +59,7 @@
         </section>
         <aside class="basket-container">
             <div class="basket">
-                <img class="basketImg" src="./lieferandoImg/basket.jpg" alt="Einkaufskorb Symbol">
+                <img id="basketImg" src="./lieferandoImg/basket.jpg" alt="Einkaufskorb Symbol">
                 <div class="basketTopic">Befülle deinen Korb</div>
                 <div class="basketText">Wähle ein paar verlockende Produkte aus und bereite deine Bestellung vor.</div>
             </div>
